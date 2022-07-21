@@ -1,0 +1,16 @@
+encoder:
+  latent_dim: 768
+  encoder_type: "data2vecencoder"
+  path: "facebook/data2vec-audio-large-100h"
+
+training:
+  epochs: 10
+  lr_ramp_steps: 100
+  lr_decay_steps: 3366
+  weight_decay: 1.0e-6
+  learning_rate_init: 1.0e-4
+  learning_rate_target: 1.0e-6
+  log_interval: 2
+  checkpoint_interval: 500
+  validate_interval: 50
+  
